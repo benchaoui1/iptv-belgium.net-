@@ -1,0 +1,122 @@
+<!doctype html><html lang="fr-BE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IPTV Smarters Pro | Installation et Guide d'Utilisation</title><meta name="description" content="Installez IPTV Smarters Pro sur Smart TV, Samsung, LG, Android TV et Fire TV Stick. Guide complet pour commencer rapidement."><meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://iptv-belgium.net/iptv-smarters-pro.html"><link rel="icon" href="images/generated/favicon.svg" type="image/svg+xml"><link rel="alternate" hreflang="fr-BE" href="https://iptv-belgium.net/iptv-smarters-pro.html"><link rel="alternate" hreflang="fr" href="https://iptv-belgium.net/iptv-smarters-pro.html"><link rel="alternate" hreflang="x-default" href="https://iptv-belgium.net/iptv-smarters-pro.html">
+
+<style id="c">
+:root{--gold:#FFD60A;--gold2:#FFB800;--red:#E30613;--soft:#CBD5E1;--line:rgba(255,255,255,.13);--orange:#ff7a18;--orange2:#ff9f1c}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;background:#080d1b;color:#fff;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{max-width:100%;height:auto;display:block}picture{display:contents}
+.site-header{position:sticky;top:0;z-index:90;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 clamp(16px,4vw,52px);height:64px;background:rgba(8,13,27,.85);border-bottom:1px solid var(--line);backdrop-filter:blur(20px)}
+.brand{display:flex;align-items:center;gap:10px}.brand-badge{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;color:#0a0e00;font-weight:800;font-size:13px;background:linear-gradient(135deg,#050505 0 30%,var(--gold) 30% 65%,var(--red) 65%)}
+.brand strong{font-size:15px;letter-spacing:-.02em}.brand small{display:block;font-size:11px;color:var(--soft)}
+.main-nav{display:flex;gap:2px;padding:4px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07)}
+.main-nav a{padding:7px 14px;border-radius:999px;font-size:13.5px;color:var(--soft);transition:background .2s,color .2s}
+.main-nav a:hover,.main-nav a.active{background:rgba(255,255,255,.1);color:#fff}
+.header-cta{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:999px;background:linear-gradient(110deg,var(--gold),var(--gold2));color:#111200;font-weight:700;font-size:13.5px;box-shadow:0 6px 28px rgba(255,184,0,.22);transition:transform .2s}
+.header-cta:hover{transform:translateY(-2px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font-weight:700;font-size:15px;cursor:pointer;border:none;transition:transform .2s,filter .2s}
+.btn.primary{background:linear-gradient(110deg,var(--gold) 0%,#fff5ad 40%,var(--gold2) 70%,var(--orange) 100%);color:#111200;box-shadow:0 8px 32px rgba(255,184,0,.24)}
+.btn.ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.14)}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.07)}
+.nav-toggle{display:none;background:transparent;border:none;padding:8px;cursor:pointer;flex-direction:column;gap:5px}
+.nav-toggle span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:transform .3s,opacity .3s}
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);align-items:center;gap:clamp(24px,4vw,56px);min-height:clamp(500px,66vh,680px);padding:clamp(32px,5vw,64px) clamp(16px,5vw,72px);overflow:hidden}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--gold)}
+.kicker::before{content:"";width:28px;height:2px;background:linear-gradient(90deg,var(--gold),var(--red));border-radius:1px}
+h1,h2,h3,p{overflow-wrap:anywhere}
+.hero h1,.page-h1{margin:14px 0 16px;font-size:clamp(34px,4.4vw,62px);line-height:1.01;letter-spacing:-.02em;text-wrap:balance}
+.lead{max-width:600px;color:var(--soft);font-size:clamp(15px,1.3vw,18px);line-height:1.65}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.hero-pills span{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.11);background:rgba(255,255,255,.055);color:var(--soft);font-size:13px}
+.hero-pills b{color:var(--gold);font-size:17px;font-weight:700}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.hero-stage{position:relative;z-index:2}
+.device-frame{position:relative;padding:12px;border-radius:20px;border:1px solid rgba(255,255,255,.15);background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.04));box-shadow:0 24px 80px rgba(0,0,0,.4);overflow:hidden;transform:perspective(900px) rotateY(-6deg) rotateX(2deg);transition:transform .4s ease;max-width:520px;margin-left:auto}
+.device-bar{display:flex;align-items:center;gap:6px;padding:8px 10px 10px}
+.device-bar span{width:9px;height:9px;border-radius:50%}
+.device-bar span:nth-child(1){background:#ff5f57}.device-bar span:nth-child(2){background:var(--gold)}.device-bar span:nth-child(3){background:#28c840}
+.device-bar b{margin-left:auto;font-size:12px;color:var(--soft)}
+.device-frame img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:12px}
+.reveal{opacity:1;transform:none}.reveal-left{opacity:1}.reveal-scale{opacity:1}
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+.js .reveal.in,.js .reveal-left.in,.js .reveal-scale.in{opacity:1;transform:none}
+.js .reveal-left{opacity:0;transform:translateX(-20px);transition:opacity .5s ease,transform .5s ease}
+.js .reveal-scale{opacity:0;transform:scale(.95);transition:opacity .5s ease,transform .5s ease}
+@media(max-width:760px){.nav-toggle{display:flex}.main-nav{position:fixed;top:64px;left:12px;right:12px;display:none;flex-direction:column;gap:4px;padding:12px;border-radius:16px;background:rgba(6,10,22,.96);border:1px solid rgba(255,255,255,.1)}.main-nav.open{display:flex}.main-nav a{padding:10px 14px;border-radius:10px;font-size:15px}.header-cta{display:none}.hero{grid-template-columns:1fr;min-height:auto;padding:20px 16px 32px;gap:20px}.hero h1,.page-h1{font-size:clamp(28px,8vw,38px)}.lead{font-size:15px}.device-frame{max-width:100%;margin:0;transform:none}.device-bar{display:none}.device-frame img{aspect-ratio:16/9}}
+</style>
+
+<noscript></noscript>
+<link rel="preload" as="image" href="images/generated/hero-apps-premium.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" href="images/generated/hero-apps-premium.jpg" fetchpriority="high">
+<meta property="og:type" content="article"><meta property="og:locale" content="fr_BE"><meta property="og:title" content="IPTV Smarters Pro | Installation et Guide d'Utilisation"><meta property="og:description" content="Installez IPTV Smarters Pro sur Smart TV, Samsung, LG, Android TV et Fire TV Stick. Guide complet pour commencer rapidement."><meta property="og:url" content="https://iptv-belgium.net/iptv-smarters-pro.html"><meta property="og:image" content="https://iptv-belgium.net/images/generated/hero-apps-premium.jpg">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="IPTV Smarters Pro | Installation et Guide d'Utilisation"><meta name="twitter:description" content="Installez IPTV Smarters Pro sur Smart TV, Samsung, LG, Android TV et Fire TV Stick. Guide complet pour commencer rapidement."><meta name="twitter:image" content="https://iptv-belgium.net/images/generated/hero-apps-premium.jpg">
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.addEventListener('DOMContentLoaded',function(){var run=function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-4DHSMHGRB2';document.head.appendChild(s);gtag('js',new Date());gtag('config','G-4DHSMHGRB2')};if('requestIdleCallback'in window){requestIdleCallback(run,{timeout:2500})}else{setTimeout(run,1200)}});</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"IPTV Smarters Pro : installation et compatibilité sur les appareils populaires","description":"Découvrez IPTV Smarters Pro, son installation sur Smart TV, Samsung, LG, Android TV et Fire TV Stick ainsi que les informations essentielles pour commencer rapidement.","author":{"@type":"Organization","name":"IPTV Belgium"},"publisher":{"@type":"Organization","name":"IPTV Belgium"},"mainEntityOfPage":"https://iptv-belgium.net/iptv-smarters-pro.html"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://iptv-belgium.net/"},{"@type":"ListItem","position":2,"name":"IPTV Smarters Pro : installation et compatibilité sur les appareils populaires","item":"https://iptv-belgium.net/iptv-smarters-pro.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "IPTV Smarters Pro est-il gratuit ?", "acceptedAnswer": {"@type": "Answer", "text": "IPTV Smarters Pro est disponible gratuitement sur la plupart des plateformes. Seule votre souscription à un abonnement IPTV est payante."}}, {"@type": "Question", "name": "IPTV Smarters Pro fonctionne sur quels appareils ?", "acceptedAnswer": {"@type": "Answer", "text": "IPTV Smarters Pro est compatible avec Android TV, Fire TV Stick, iOS, Android mobile et PC/Mac via navigateur."}}, {"@type": "Question", "name": "Comment configurer IPTV Smarters Pro ?", "acceptedAnswer": {"@type": "Answer", "text": "Ouvrez l'application, choisissez 'Xtream Codes API' ou 'M3U URL', saisissez les identifiants fournis lors de votre activation et validez."}}]}</script><link rel="stylesheet" href="style.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="style.css"></noscript>
+</head><body><header class="site-header"><a class="brand" href="index.html" aria-label="IPTV Belgium accueil"><span class="brand-badge">BE</span><span><strong>IPTV Belgium</strong><small>Premium Bruxelles</small></span></a><button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button><nav class="main-nav"><a class="" href="index.html">Accueil</a><a class="" href="abonnement-iptv-belgique.html">Abonnement</a><a class="" href="quelle-application-iptv-choisir.html">Applications</a><a class="" href="iptv-samsung-tv.html">Appareils</a><a class="" href="faq.html">Guides</a><a class="" href="contact.html">Contact</a></nav><a class="header-cta" href="https://wa.me/447577340962?text=Bonjour%2C%20je%20souhaite%20une%20offre%20IPTV%20Belgium." target="_blank" rel="nofollow noopener">WhatsApp</a></header><main><section class="hero ">
+    <div class="hero-ambient" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="hero-copy reveal">
+      <span class="kicker">IPTV Belgium</span>
+      <h1>IPTV Smarters Pro : installation et compatibilité sur les appareils populaires</h1>
+      <p class="lead">Découvrez IPTV Smarters Pro, son installation sur Smart TV, Samsung, LG, Android TV et Fire TV Stick ainsi que les informations essentielles pour commencer rapidement.</p>
+      <div class="hero-pills" aria-label="Avantages IPTV Belgium">
+        <span><b>3 min</b> activation</span>
+        <span><b>4K</b> ready</span>
+        <span><b>BE</b> support</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn primary" href="abonnement-iptv-belgique.html">Voir les offres</a>
+      </div>
+    </div>
+    <div class="hero-stage reveal">
+      <div class="premium-device" data-tilt>
+        <div class="device-bar"><span></span><span></span><span></span><b>IPTV Belgium</b></div>
+        <picture><source type="image/webp" srcset="images/generated/hero-apps-premium.webp"><img loading="lazy" decoding="async" src="images/generated/hero-apps-premium.jpg" alt="IPTV Smarters Pro : installation et compatibilité sur les appareils populaires" width="720" height="520" fetchpriority="auto"></picture>
+        <div class="screen-float float-a"><strong>HD</strong><small>stable</small></div>
+        <div class="screen-float float-b"><strong>Live</strong><small>sport</small></div>
+        
+      </div>
+    </div>
+  </section><section class="content-flow"><article class="content-row content-style-1 reveal"><div class="row-meta"><span>01</span><em>Rapide</em></div><div class="row-copy"><h2>Qu’est-ce que IPTV Smarters Pro ?</h2><p>IPTV Smarters Pro est une application de lecture qui permet d’organiser les accès IPTV sur plusieurs appareils compatibles.</p></div></article><article class="content-row content-style-2 reveal"><div class="row-meta"><span>02</span><em>Choix</em></div><div class="row-copy"><h2>Appareils compatibles</h2><p>Elle peut être utilisée sur Smart TV, <a href="iptv-samsung-tv.html">IPTV Samsung TV</a>, <a href="iptv-fire-tv-stick.html">IPTV Fire TV Stick</a>, Android TV, mobile et tablette selon disponibilité.</p></div></article><article class="content-row content-style-3 reveal"><div class="row-meta"><span>03</span><em>Apps</em></div><div class="row-copy"><h2>Comment installer IPTV Smarters Pro ?</h2><p>Installez l’application depuis la boutique disponible, ouvrez-la, puis ajoutez les informations d’activation reçues.</p></div></article><article class="content-row content-style-4 reveal"><div class="row-meta"><span>04</span><em>Sport</em></div><div class="row-copy"><h2>Pourquoi IPTV Smarters Pro est-il populaire ?</h2><p>Sa version gratuite, son interface simple et sa prise en main rapide en font un choix apprécié des débutants.</p></div></article></section><section class="section faq-section"><div class="section-head reveal"><span class="kicker">FAQ</span><h2>Questions fréquentes</h2></div><div class="faq-list"><details class="faq-item reveal"><summary>Combien de temps prend l’activation ?</summary><p>Après validation, les informations d’activation sont généralement envoyées en moins de 3 minutes.</p></details><details class="faq-item reveal"><summary>Quels appareils sont compatibles ?</summary><p>Le service peut être configuré sur Smart TV, Samsung TV, LG TV, Android TV, Fire TV Stick, Apple TV, PC, Mac et mobile selon l’application utilisée.</p></details><details class="faq-item reveal"><summary>Puis-je demander de l’aide avant de commander ?</summary><p>Oui. Vous pouvez contacter l’assistance au +447577340962 pour vérifier votre appareil et l’application adaptée.</p></details></div></section><section class="section related-section"><div class="section-head reveal"><span class="kicker">À lire aussi</span><h2>Guides utiles</h2></div><div class="guide-list"><a class="guide-item reveal" href="ibo-player-pro.html"><em>01</em><strong>IBO Player Pro</strong><span>Lire le guide</span><b>→</b></a><a class="guide-item reveal" href="iptv-smarters-pro-ou-ibo-player-pro.html"><em>02</em><strong>IPTV Smarters Pro ou IBO Player Pro</strong><span>Lire le guide</span><b>→</b></a><a class="guide-item reveal" href="iptv-samsung-tv.html"><em>03</em><strong>IPTV Samsung TV</strong><span>Lire le guide</span><b>→</b></a><a class="guide-item reveal" href="iptv-fire-tv-stick.html"><em>04</em><strong>IPTV Fire TV Stick</strong><span>Lire le guide</span><b>→</b></a><a class="guide-item reveal" href="abonnement-iptv-belgique.html"><em>05</em><strong>Abonnement IPTV Belgique</strong><span>Lire le guide</span><b>→</b></a></div></section><section class="cta-section reveal"><div><span class="kicker">Action rapide</span><h2>Besoin de vérifier votre appareil avant de commander ?</h2><p>Notre équipe peut vous orienter selon votre appareil, votre application et votre connexion. Téléphone: +447577340962. Adresse: Av. de la Reine 232, 1000 Bruxelles, Belgium.</p></div><a class="btn primary" href="https://wa.me/447577340962?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20IPTV%20Belgium." target="_blank" rel="nofollow noopener">Contacter sur WhatsApp</a></section></main><footer class="site-footer">
+<div class="footer-ribbon"></div>
+<div class="footer-grid">
+  <div>
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-badge">BE</span>
+      <span><strong>IPTV Belgium</strong><small>Premium · Belgique</small></span>
+    </a>
+    <p class="footer-desc">Abonnement IPTV premium en Belgique. Activation en 3 minutes, assistance WhatsApp incluse.</p>
+    <p class="footer-contact">+447577340962<br>Av. de la Reine 232, 1000 Bruxelles</p>
+  </div>
+  <div>
+    <p class="footer-nav-heading">Offres</p>
+    <a href="abonnement-iptv-belgique.html">Abonnement IPTV</a>
+    <a href="abonnement-iptv-belgique.html#offres">Formule Essentiel</a>
+    <a href="abonnement-iptv-belgique.html#offres">Formule Premium</a>
+    <a href="abonnement-iptv-belgique.html#offres">Formule Duo</a>
+  </div>
+  <div>
+    <p class="footer-nav-heading">Guides &amp; Blogs</p>
+    <a href="blogs.html">Tous les articles</a>
+    <a href="quelle-application-iptv-choisir.html">Choisir une application</a>
+    <a href="iptv-ne-fonctionne-plus.html">Dépannage IPTV</a>
+    <a href="iptv-belgique-legal.html">Légalité IPTV</a>
+  </div>
+  <div>
+    <p class="footer-nav-heading">Informations</p>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+    <a href="cookie-policy.html">Cookie Policy</a>
+  </div>
+</div>
+<div class="footer-bottom">
+  <span>© 2026 IPTV Belgium</span>
+  <span>Usage responsable et respect des droits applicables requis.</span>
+</div>
+</footer><a class="wa-float" href="https://wa.me/447577340962?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20IPTV%20Belgium." target="_blank" rel="nofollow noopener" aria-label="Contacter sur WhatsApp"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.557 4.118 1.529 5.849L.057 23.43a.5.5 0 0 0 .514.571l5.764-1.514A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 0 1-4.997-1.368l-.358-.213-3.722.977.993-3.63-.234-.373A9.785 9.785 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg></a><script src="script.js" defer></script>
+</body></html>

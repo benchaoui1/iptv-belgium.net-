@@ -1,0 +1,120 @@
+# ════════════════════════════════════════════
+#  IPTV Belgium — .htaccess
+#  Apache 2.4 | Production Ready | SEO Optimized
+# ════════════════════════════════════════════
+
+Options -Indexes
+ServerSignature Off
+
+# ── HTTPS Redirect ──
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ── www → non-www ──
+RewriteCond %{HTTP_HOST} ^www\.iptv-belgium\.net [NC]
+RewriteRule ^ https://iptv-belgium.net%{REQUEST_URI} [L,R=301]
+
+# ── Ghost pages → redirect 301 ──
+RewriteRule ^compatibilite-iptv\.html$ https://iptv-belgium.net/iptv-samsung-tv.html [L,R=301]
+RewriteRule ^guide-epg-iptv\.html$ https://iptv-belgium.net/faq.html [L,R=301]
+RewriteRule ^installation-iptv\.html$ https://iptv-belgium.net/abonnement-iptv-belgique.html [L,R=301]
+RewriteRule ^iptv-apple-tv\.html$ https://iptv-belgium.net/quelle-application-iptv-choisir.html [L,R=301]
+RewriteRule ^liste-chaines-iptv\.html$ https://iptv-belgium.net/abonnement-iptv-belgique.html [L,R=301]
+RewriteRule ^meilleure-application-iptv-belgique\.html$ https://iptv-belgium.net/quelle-application-iptv-choisir.html [L,R=301]
+RewriteRule ^problemes-iptv-solutions\.html$ https://iptv-belgium.net/iptv-ne-fonctionne-plus.html [L,R=301]
+RewriteRule ^refund-policy\.html$ https://iptv-belgium.net/terms-and-conditions.html [L,R=301]
+RewriteRule ^support-iptv-belgique\.html$ https://iptv-belgium.net/contact.html [L,R=301]
+RewriteRule ^conditions-utilisation\.html$ https://iptv-belgium.net/terms-and-conditions.html [L,R=301]
+
+# ── Clean 404 ──
+ErrorDocument 404 /404.html
+
+# ── GZIP Compression ──
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/woff
+  AddOutputFilterByType DEFLATE font/woff2
+</IfModule>
+
+# ── Brotli Compression (if available) ──
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css application/javascript
+  AddOutputFilterByType BROTLI_COMPRESS image/svg+xml application/json
+</IfModule>
+
+# ── Browser Caching ──
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html                  "access plus 1 hour"
+  ExpiresByType text/css                   "access plus 1 year"
+  ExpiresByType application/javascript     "access plus 1 year"
+  ExpiresByType image/webp                 "access plus 1 year"
+  ExpiresByType image/jpeg                 "access plus 1 year"
+  ExpiresByType image/png                  "access plus 1 year"
+  ExpiresByType image/svg+xml              "access plus 1 year"
+  ExpiresByType image/x-icon               "access plus 1 year"
+  ExpiresByType font/woff2                 "access plus 1 year"
+  ExpiresByType font/woff                  "access plus 1 year"
+  ExpiresByType application/xml            "access plus 1 hour"
+  ExpiresByType text/xml                   "access plus 1 hour"
+</IfModule>
+
+# ── Cache-Control Headers ──
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|webp|jpg|jpeg|png|svg|ico|woff2|woff)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.xml$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+
+  # Security Headers
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # HSTS (uncomment after SSL confirmed working)
+  # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# ── WebP Serving (auto si navigateur compatible) ──
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_ACCEPT} image/webp
+  RewriteCond %{REQUEST_FILENAME} \.(jpe?g|png)$
+  RewriteCond %{REQUEST_FILENAME}.webp -f
+  RewriteRule ^ %{REQUEST_URI}.webp [T=image/webp,L]
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpe?g|png)$">
+    Header append Vary Accept
+  </FilesMatch>
+</IfModule>
+
+# ── Keep-Alive ──
+<IfModule mod_headers.c>
+  Header set Connection keep-alive
+</IfModule>
+
+# ── ETags ──
+FileETag None
+<IfModule mod_headers.c>
+  Header unset ETag
+</IfModule>
+
+# ── Charset ──
+AddDefaultCharset UTF-8

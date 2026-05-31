@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://iptv-belgium.net/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iptv-belgium.net/blogs.html</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://iptv-belgium.net/abonnement-iptv-belgique.html</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://iptv-belgium.net/coupe-du-monde-2026.html</loc><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-samsung-tv.html</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-fire-tv-stick.html</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-android-tv.html</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-box.html</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-smarters-pro.html</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://iptv-belgium.net/ibo-player-pro.html</loc><changefreq>weekly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://iptv-belgium.net/smart-iptv-belgique.html</loc><changefreq>weekly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://iptv-belgium.net/quelle-application-iptv-choisir.html</loc><changefreq>weekly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-smarters-pro-ou-ibo-player-pro.html</loc><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-amende-belgique.html</loc><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-belgique-legal.html</loc><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-belgique-avis.html</loc><changefreq>weekly</changefreq><priority>0.78</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-ne-fonctionne-plus.html</loc><changefreq>weekly</changefreq><priority>0.78</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-samsung-tv-problemes.html</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-fire-tv-stick-problemes.html</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://iptv-belgium.net/iptv-4k-vitesse-internet.html</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://iptv-belgium.net/faq.html</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://iptv-belgium.net/a-propos.html</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://iptv-belgium.net/contact.html</loc><changefreq>monthly</changefreq><priority>0.60</priority></url>
+  <url><loc>https://iptv-belgium.net/privacy-policy.html</loc><changefreq>monthly</changefreq><priority>0.30</priority></url>
+  <url><loc>https://iptv-belgium.net/terms-and-conditions.html</loc><changefreq>monthly</changefreq><priority>0.30</priority></url>
+  <url><loc>https://iptv-belgium.net/cookie-policy.html</loc><changefreq>monthly</changefreq><priority>0.25</priority></url>
+</urlset>

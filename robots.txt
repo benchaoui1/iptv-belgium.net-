@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /tools/
+Disallow: /compatibilite-iptv.html
+Disallow: /guide-epg-iptv.html
+Disallow: /installation-iptv.html
+Disallow: /iptv-apple-tv.html
+Disallow: /liste-chaines-iptv.html
+Disallow: /meilleure-application-iptv-belgique.html
+Disallow: /problemes-iptv-solutions.html
+Disallow: /refund-policy.html
+Disallow: /support-iptv-belgique.html
+Disallow: /conditions-utilisation.html
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+Sitemap: https://iptv-belgium.net/sitemap.xml
